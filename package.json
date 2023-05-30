@@ -9,7 +9,8 @@
     "shopify:dev": "cd theme && shopify theme dev",
     "shopify:push": "cd theme && shopify theme push",
     "shopify:pull": "cd theme && shopify theme pull",
-    "install-theme": "ts-node scripts/install-theme.ts --repo=https://github.com/Shopify/dawn.git"
+    "install-theme": "ts-node scripts/install-theme.ts --repo=https://github.com/Shopify/dawn.git",
+    "build:tabs": "ts-node ./tabs/compile-tabs.ts"
   },
   "keywords": [
     "Shopify Theme",
