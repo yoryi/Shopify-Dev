@@ -100,6 +100,35 @@
       },
       "block_order": ["block1", "block2", "block3"]
     },
+    "tabs-complex": {
+      "type": "tabs-complex",
+      "settings": {
+        "show_tabs": true,
+        "tab_font_size": 24,
+        "tab_text_color": "#000000"
+      },
+      "blocks": {
+        "block1": {
+          "type": "text",
+          "settings": {
+            "tab_title": "A"
+          }
+        },
+        "block2": {
+          "type": "text",
+          "settings": {
+            "tab_title": "B"
+          }
+        },
+        "block3": {
+          "type": "text",
+          "settings": {
+            "tab_title": "C"
+          }
+        }
+      },
+      "block_order": ["block1", "block2", "block3"]
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -246,6 +275,7 @@
     "image_banner",
     "tabs-simple",
     "tabs",
+    "tabs-complex",
     "rich_text",
     "featured_collection",
     "collage",

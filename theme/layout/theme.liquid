@@ -240,6 +240,9 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
+    {{ 'index.min.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'index.bundle.js' | asset_url }}" defer="defer"></script>
+
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -318,5 +321,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {{ 'tabs.js' | asset_url | script_tag }}
   </body>
 </html>

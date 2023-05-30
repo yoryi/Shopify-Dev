@@ -10,6 +10,7 @@
     "shopify:push": "cd theme && shopify theme push",
     "shopify:pull": "cd theme && shopify theme pull",
     "install-theme": "ts-node scripts/install-theme.ts --repo=https://github.com/Shopify/dawn.git",
+    "build:tabs-tsx": "esbuild ./tabs-tsx/tabs.tsx --bundle --outfile=./theme/assets/tabs.js --platform=browser --target=es2015 --format=esm --loader:.js=jsx --minify",
     "build:tabs": "ts-node ./tabs/compile-tabs.ts"
   },
   "keywords": [
