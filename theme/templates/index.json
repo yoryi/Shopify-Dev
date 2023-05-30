@@ -42,6 +42,35 @@
         "show_text_below": false
       }
     },
+    "tabs-simple": {
+      "type": "tabs-simple",
+      "settings": {
+        "show_tabs": true,
+        "tab_font_size": 24,
+        "tab_text_color": "#000000"
+      },
+      "blocks": {
+        "block1": {
+          "type": "text",
+          "settings": {
+            "tab_title": "A"
+          }
+        },
+        "block2": {
+          "type": "text",
+          "settings": {
+            "tab_title": "B"
+          }
+        },
+        "block3": {
+          "type": "text",
+          "settings": {
+            "tab_title": "C"
+          }
+        }
+      },
+      "block_order": ["block1", "block2", "block3"]
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -184,5 +213,5 @@
       }
     }
   },
-  "order": ["image_banner", "rich_text", "featured_collection", "collage", "video", "multicolumn"]
+  "order": ["image_banner", "tabs-simple", "rich_text", "featured_collection", "collage", "video", "multicolumn"]
 }
